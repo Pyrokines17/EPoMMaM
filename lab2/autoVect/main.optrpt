@@ -1,0 +1,283 @@
+Begin optimization report for: getX(double*, unsigned long, unsigned long, unsigned long)
+=================================================================
+
+Begin optimization report for: getPlus(double*, unsigned long, unsigned long, unsigned long)
+=================================================================
+
+Begin optimization report for: __clang_call_terminate
+=================================================================
+
+Begin optimization report for: getP(double, double, double, double, unsigned long, unsigned long, double, double) (.a)
+
+LOOP BEGIN at main.cpp (32, 5)
+    remark #15541: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at main.cpp (33, 9)
+        remark #15300: LOOP WAS VECTORIZED
+        remark #15305: vectorization support: vector length 16
+        remark #15389: vectorization support: unmasked unaligned unit stride store: [ /home/pyro/Workdir/EPSMiM/lab2/autoVect/main.cpp (35, 17) ] 
+        remark #15475: --- begin vector loop cost summary ---
+        remark #15476: scalar cost: 13.000000 
+        remark #15477: vector cost: 1.984375 
+        remark #15478: estimated potential speedup: 5.937500 
+        remark #15309: vectorization support: normalized vectorization overhead 6.546875
+        remark #15488: --- end vector loop cost summary ---
+        remark #15447: --- begin vector loop memory reference summary ---
+        remark #15451: unmasked unaligned unit stride stores: 1 
+        remark #15474: --- end vector loop memory reference summary ---
+    LOOP END
+
+    LOOP BEGIN at main.cpp (33, 9)
+    <Remainder loop for vectorization>
+        remark #15440: remainder loop was vectorized (masked)
+        remark #15305: vectorization support: vector length 16
+        remark #15389: vectorization support: masked unaligned unit stride store: [ /home/pyro/Workdir/EPSMiM/lab2/autoVect/main.cpp (35, 17) ] 
+        remark #15475: --- begin vector loop cost summary ---
+        remark #15488: --- end vector loop cost summary ---
+        remark #15447: --- begin vector loop memory reference summary ---
+        remark #15457: masked unaligned unit stride stores: 1 
+        remark #15474: --- end vector loop memory reference summary ---
+    LOOP END
+LOOP END
+=================================================================
+
+Begin optimization report for: getP(double, double, double, double, unsigned long, unsigned long, double, double) (.A)
+
+LOOP BEGIN at main.cpp (32, 5)
+    remark #15541: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at main.cpp (33, 9)
+        remark #15300: LOOP WAS VECTORIZED
+        remark #15305: vectorization support: vector length 8
+        remark #15389: vectorization support: unmasked unaligned unit stride store: [ /home/pyro/Workdir/EPSMiM/lab2/autoVect/main.cpp (35, 17) ] 
+        remark #15475: --- begin vector loop cost summary ---
+        remark #15476: scalar cost: 20.000000 
+        remark #15477: vector cost: 18.062500 
+        remark #15478: estimated potential speedup: 1.093750 
+        remark #15309: vectorization support: normalized vectorization overhead 1.656250
+        remark #15488: --- end vector loop cost summary ---
+        remark #15447: --- begin vector loop memory reference summary ---
+        remark #15451: unmasked unaligned unit stride stores: 1 
+        remark #15474: --- end vector loop memory reference summary ---
+    LOOP END
+
+    LOOP BEGIN at main.cpp (33, 9)
+    <Remainder loop for vectorization>
+    LOOP END
+LOOP END
+=================================================================
+
+Begin optimization report for: getP(double, double, double, double, unsigned long, unsigned long, double, double) (.resolver)
+=================================================================
+
+Begin optimization report for: main.a
+
+LOOP BEGIN at main.cpp (32, 5)
+    remark #15541: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at main.cpp (33, 9)
+        remark #15300: LOOP WAS VECTORIZED
+        remark #15305: vectorization support: vector length 16
+        remark #15389: vectorization support: unmasked unaligned unit stride store: [ /home/pyro/Workdir/EPSMiM/lab2/autoVect/main.cpp (35, 17) ] 
+        remark #15475: --- begin vector loop cost summary ---
+        remark #15476: scalar cost: 13.000000 
+        remark #15477: vector cost: 1.984375 
+        remark #15478: estimated potential speedup: 5.937500 
+        remark #15309: vectorization support: normalized vectorization overhead 6.546875
+        remark #15488: --- end vector loop cost summary ---
+        remark #15447: --- begin vector loop memory reference summary ---
+        remark #15451: unmasked unaligned unit stride stores: 1 
+        remark #15474: --- end vector loop memory reference summary ---
+    LOOP END
+
+    LOOP BEGIN at main.cpp (33, 9)
+    <Remainder loop for vectorization>
+        remark #15440: remainder loop was vectorized (masked)
+        remark #15305: vectorization support: vector length 16
+        remark #15389: vectorization support: masked unaligned unit stride store: [ /home/pyro/Workdir/EPSMiM/lab2/autoVect/main.cpp (35, 17) ] 
+        remark #15475: --- begin vector loop cost summary ---
+        remark #15488: --- end vector loop cost summary ---
+        remark #15447: --- begin vector loop memory reference summary ---
+        remark #15457: masked unaligned unit stride stores: 1 
+        remark #15474: --- end vector loop memory reference summary ---
+    LOOP END
+LOOP END
+
+LOOP BEGIN at main.cpp (99, 5)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence
+    remark #15346: vector dependence: assumed FLOW dependence
+    remark #15346: vector dependence: assumed FLOW dependence
+LOOP END
+
+LOOP BEGIN at main.cpp (99, 5)
+<Remainder loop>
+LOOP END
+
+LOOP BEGIN at main.cpp (99, 5)
+    remark #15541: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at main.cpp (102, 9)
+        remark #15541: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at main.cpp (104, 13)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed OUTPUT dependence between [ /home/pyro/Workdir/EPSMiM/lab2/autoVect/main.cpp (114, 17) ] and [ /home/pyro/Workdir/EPSMiM/lab2/autoVect/main.cpp (114, 17) ] 
+            remark #15346: vector dependence: assumed OUTPUT dependence between [ /home/pyro/Workdir/EPSMiM/lab2/autoVect/main.cpp (114, 17) ] and [ /home/pyro/Workdir/EPSMiM/lab2/autoVect/main.cpp (114, 17) ] 
+            remark #15346: vector dependence: assumed OUTPUT dependence between [ /home/pyro/Workdir/EPSMiM/lab2/autoVect/main.cpp (114, 17) ] and [ /home/pyro/Workdir/EPSMiM/lab2/autoVect/main.cpp (114, 17) ] 
+        LOOP END
+    LOOP END
+
+    LOOP BEGIN at main.cpp (102, 9)
+    <Remainder loop>
+        remark #15541: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at main.cpp (104, 13)
+            remark #15300: LOOP WAS VECTORIZED
+            remark #15305: vectorization support: vector length 8
+            remark #15389: vectorization support: unmasked unaligned unit stride load: [ /home/pyro/Workdir/EPSMiM/lab2/autoVect/main.cpp (105, 81) ] 
+            remark #15389: vectorization support: unmasked unaligned unit stride load: [ /home/pyro/Workdir/EPSMiM/lab2/autoVect/main.cpp (105, 54) ] 
+            remark #15389: vectorization support: unmasked unaligned unit stride load: [ /home/pyro/Workdir/EPSMiM/lab2/autoVect/main.cpp (106, 83) ] 
+            remark #15389: vectorization support: unmasked unaligned unit stride load: [ /home/pyro/Workdir/EPSMiM/lab2/autoVect/main.cpp (106, 54) ] 
+            remark #15389: vectorization support: unmasked unaligned unit stride load: [ /home/pyro/Workdir/EPSMiM/lab2/autoVect/main.cpp (53, 43) ] 
+            remark #15389: vectorization support: unmasked unaligned unit stride load: [ /home/pyro/Workdir/EPSMiM/lab2/autoVect/main.cpp (53, 12) ] 
+            remark #15389: vectorization support: unmasked unaligned unit stride load: [ /home/pyro/Workdir/EPSMiM/lab2/autoVect/main.cpp (53, 74) ] 
+            remark #15389: vectorization support: unmasked unaligned unit stride load: [ /home/pyro/Workdir/EPSMiM/lab2/autoVect/main.cpp (53, 105) ] 
+            remark #15389: vectorization support: unmasked unaligned unit stride load: [ /home/pyro/Workdir/EPSMiM/lab2/autoVect/main.cpp (108, 29) ] 
+            remark #15389: vectorization support: unmasked unaligned unit stride load: [ /home/pyro/Workdir/EPSMiM/lab2/autoVect/main.cpp (57, 12) ] 
+            remark #15389: vectorization support: unmasked unaligned unit stride load: [ /home/pyro/Workdir/EPSMiM/lab2/autoVect/main.cpp (57, 39) ] 
+            remark #15389: vectorization support: unmasked unaligned unit stride load: [ /home/pyro/Workdir/EPSMiM/lab2/autoVect/main.cpp (57, 66) ] 
+            remark #15389: vectorization support: unmasked unaligned unit stride load: [ /home/pyro/Workdir/EPSMiM/lab2/autoVect/main.cpp (57, 91) ] 
+            remark #15389: vectorization support: unmasked unaligned unit stride load: [ /home/pyro/Workdir/EPSMiM/lab2/autoVect/main.cpp (112, 56) ] 
+            remark #15389: vectorization support: unmasked unaligned unit stride store: [ /home/pyro/Workdir/EPSMiM/lab2/autoVect/main.cpp (114, 17) ] 
+            remark #15475: --- begin vector loop cost summary ---
+            remark #15476: scalar cost: 55.000000 
+            remark #15477: vector cost: 9.250000 
+            remark #15478: estimated potential speedup: 5.875000 
+            remark #15309: vectorization support: normalized vectorization overhead 1.078125
+            remark #15591: vectorized intrinsic functions: 1
+            remark #15488: --- end vector loop cost summary ---
+            remark #15447: --- begin vector loop memory reference summary ---
+            remark #15450: unmasked unaligned unit stride loads: 14 
+            remark #15451: unmasked unaligned unit stride stores: 1 
+            remark #15474: --- end vector loop memory reference summary ---
+            remark #25587: Loop has reduction
+            remark #15590: vectorization support: maximum reduction with value type double [main.cpp:112:25]
+        LOOP END
+
+        LOOP BEGIN at main.cpp (104, 13)
+        <Remainder loop for vectorization>
+            remark #15440: remainder loop was vectorized (masked)
+            remark #15305: vectorization support: vector length 8
+            remark #15389: vectorization support: masked unaligned unit stride load: [ /home/pyro/Workdir/EPSMiM/lab2/autoVect/main.cpp (105, 81) ] 
+            remark #15389: vectorization support: masked unaligned unit stride load: [ /home/pyro/Workdir/EPSMiM/lab2/autoVect/main.cpp (105, 54) ] 
+            remark #15389: vectorization support: masked unaligned unit stride load: [ /home/pyro/Workdir/EPSMiM/lab2/autoVect/main.cpp (106, 83) ] 
+            remark #15389: vectorization support: masked unaligned unit stride load: [ /home/pyro/Workdir/EPSMiM/lab2/autoVect/main.cpp (106, 54) ] 
+            remark #15389: vectorization support: masked unaligned unit stride load: [ /home/pyro/Workdir/EPSMiM/lab2/autoVect/main.cpp (53, 43) ] 
+            remark #15389: vectorization support: masked unaligned unit stride load: [ /home/pyro/Workdir/EPSMiM/lab2/autoVect/main.cpp (53, 12) ] 
+            remark #15389: vectorization support: masked unaligned unit stride load: [ /home/pyro/Workdir/EPSMiM/lab2/autoVect/main.cpp (53, 74) ] 
+            remark #15389: vectorization support: masked unaligned unit stride load: [ /home/pyro/Workdir/EPSMiM/lab2/autoVect/main.cpp (53, 105) ] 
+            remark #15389: vectorization support: masked unaligned unit stride load: [ /home/pyro/Workdir/EPSMiM/lab2/autoVect/main.cpp (108, 29) ] 
+            remark #15389: vectorization support: masked unaligned unit stride load: [ /home/pyro/Workdir/EPSMiM/lab2/autoVect/main.cpp (57, 12) ] 
+            remark #15389: vectorization support: masked unaligned unit stride load: [ /home/pyro/Workdir/EPSMiM/lab2/autoVect/main.cpp (57, 39) ] 
+            remark #15389: vectorization support: masked unaligned unit stride load: [ /home/pyro/Workdir/EPSMiM/lab2/autoVect/main.cpp (57, 66) ] 
+            remark #15389: vectorization support: masked unaligned unit stride load: [ /home/pyro/Workdir/EPSMiM/lab2/autoVect/main.cpp (57, 91) ] 
+            remark #15389: vectorization support: masked unaligned unit stride load: [ /home/pyro/Workdir/EPSMiM/lab2/autoVect/main.cpp (112, 56) ] 
+            remark #15389: vectorization support: masked unaligned unit stride store: [ /home/pyro/Workdir/EPSMiM/lab2/autoVect/main.cpp (114, 17) ] 
+            remark #15475: --- begin vector loop cost summary ---
+            remark #15591: vectorized intrinsic functions: 1
+            remark #15488: --- end vector loop cost summary ---
+            remark #15447: --- begin vector loop memory reference summary ---
+            remark #15456: masked unaligned unit stride loads: 14 
+            remark #15457: masked unaligned unit stride stores: 1 
+            remark #15474: --- end vector loop memory reference summary ---
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Begin optimization report for: main.A
+
+LOOP BEGIN at main.cpp (32, 5)
+    remark #15541: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at main.cpp (33, 9)
+        remark #15300: LOOP WAS VECTORIZED
+        remark #15305: vectorization support: vector length 8
+        remark #15389: vectorization support: unmasked unaligned unit stride store: [ /home/pyro/Workdir/EPSMiM/lab2/autoVect/main.cpp (35, 17) ] 
+        remark #15475: --- begin vector loop cost summary ---
+        remark #15476: scalar cost: 20.000000 
+        remark #15477: vector cost: 18.062500 
+        remark #15478: estimated potential speedup: 1.093750 
+        remark #15309: vectorization support: normalized vectorization overhead 1.656250
+        remark #15488: --- end vector loop cost summary ---
+        remark #15447: --- begin vector loop memory reference summary ---
+        remark #15451: unmasked unaligned unit stride stores: 1 
+        remark #15474: --- end vector loop memory reference summary ---
+    LOOP END
+
+    LOOP BEGIN at main.cpp (33, 9)
+    <Remainder loop for vectorization>
+    LOOP END
+LOOP END
+
+LOOP BEGIN at main.cpp (99, 5)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence
+    remark #15346: vector dependence: assumed FLOW dependence
+    remark #15346: vector dependence: assumed FLOW dependence
+LOOP END
+
+LOOP BEGIN at main.cpp (99, 5)
+<Remainder loop>
+LOOP END
+
+LOOP BEGIN at main.cpp (99, 5)
+    remark #15541: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at main.cpp (102, 9)
+        remark #15541: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at main.cpp (104, 13)
+            remark #15300: LOOP WAS VECTORIZED
+            remark #15305: vectorization support: vector length 2
+            remark #15389: vectorization support: unmasked unaligned unit stride load: [ /home/pyro/Workdir/EPSMiM/lab2/autoVect/main.cpp (105, 81) ] 
+            remark #15389: vectorization support: unmasked unaligned unit stride load: [ /home/pyro/Workdir/EPSMiM/lab2/autoVect/main.cpp (105, 54) ] 
+            remark #15389: vectorization support: unmasked unaligned unit stride load: [ /home/pyro/Workdir/EPSMiM/lab2/autoVect/main.cpp (106, 83) ] 
+            remark #15389: vectorization support: unmasked unaligned unit stride load: [ /home/pyro/Workdir/EPSMiM/lab2/autoVect/main.cpp (106, 54) ] 
+            remark #15389: vectorization support: unmasked unaligned unit stride load: [ /home/pyro/Workdir/EPSMiM/lab2/autoVect/main.cpp (53, 43) ] 
+            remark #15389: vectorization support: unmasked unaligned unit stride load: [ /home/pyro/Workdir/EPSMiM/lab2/autoVect/main.cpp (53, 12) ] 
+            remark #15389: vectorization support: unmasked unaligned unit stride load: [ /home/pyro/Workdir/EPSMiM/lab2/autoVect/main.cpp (53, 74) ] 
+            remark #15389: vectorization support: unmasked unaligned unit stride load: [ /home/pyro/Workdir/EPSMiM/lab2/autoVect/main.cpp (53, 105) ] 
+            remark #15389: vectorization support: unmasked unaligned unit stride load: [ /home/pyro/Workdir/EPSMiM/lab2/autoVect/main.cpp (108, 29) ] 
+            remark #15389: vectorization support: unmasked unaligned unit stride load: [ /home/pyro/Workdir/EPSMiM/lab2/autoVect/main.cpp (57, 12) ] 
+            remark #15389: vectorization support: unmasked unaligned unit stride load: [ /home/pyro/Workdir/EPSMiM/lab2/autoVect/main.cpp (57, 39) ] 
+            remark #15389: vectorization support: unmasked unaligned unit stride load: [ /home/pyro/Workdir/EPSMiM/lab2/autoVect/main.cpp (57, 66) ] 
+            remark #15389: vectorization support: unmasked unaligned unit stride load: [ /home/pyro/Workdir/EPSMiM/lab2/autoVect/main.cpp (57, 91) ] 
+            remark #15389: vectorization support: unmasked unaligned unit stride load: [ /home/pyro/Workdir/EPSMiM/lab2/autoVect/main.cpp (112, 56) ] 
+            remark #15389: vectorization support: unmasked unaligned unit stride store: [ /home/pyro/Workdir/EPSMiM/lab2/autoVect/main.cpp (114, 17) ] 
+            remark #15475: --- begin vector loop cost summary ---
+            remark #15476: scalar cost: 110.000000 
+            remark #15477: vector cost: 76.500000 
+            remark #15478: estimated potential speedup: 1.421875 
+            remark #15309: vectorization support: normalized vectorization overhead 0.093750
+            remark #15591: vectorized intrinsic functions: 1
+            remark #15488: --- end vector loop cost summary ---
+            remark #15447: --- begin vector loop memory reference summary ---
+            remark #15450: unmasked unaligned unit stride loads: 14 
+            remark #15451: unmasked unaligned unit stride stores: 1 
+            remark #15474: --- end vector loop memory reference summary ---
+            remark #25587: Loop has reduction
+            remark #15590: vectorization support: maximum reduction with value type double [main.cpp:112:25]
+        LOOP END
+
+        LOOP BEGIN at main.cpp (104, 13)
+        <Remainder loop for vectorization>
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Begin optimization report for: main.resolver
+=================================================================
+
